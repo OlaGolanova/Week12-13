@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Сервис отзывов со спам фильтром</h1>
+    <div class="rev_container">
+        <div class="rev_item">
+            <h2>Оставьте Ваш отзыв</h2>
+            <form>
+                <label>Введите ваше имя</label> <br>
+                <input type="text" placeholder="Елена"  id="rev_name" > <br>
+
+                <label>Введите ссылку вашего аватара</label> <br>
+                <input type="text" placeholder="https//..." id="hrf"> <br>
+
+                <label>Оставьте комментарий: </label> <br>
+                <textarea  id="rev" cols="70" rows="15"></textarea> <br>
+                <button type="button" class="btn_rev" id="button">Отправить</button>
+            </form>
+        </div>
+        <div class="rev_item rev_item_client">
+            <h2 class="subtitle">Отзывы клиентов</h2>
+        </div>
+    </div>
+
+
+     <script src="index.js"></script>
+</body>
+</html>
