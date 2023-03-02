@@ -20,21 +20,13 @@ button.addEventListener('click', showComment, {once:true});
 
 function showComment() {
   let clientRev = document.createElement('div');
-  clientRev.className = "container";
-  clientRev.innerHTML = `<div class="client_container">
-                              <div class="client_foto">
-                                  <img src=""  id="client_img" width="100px">
-                              </div>
-                              <div class="client_name"></div>
-                          </div>
-                          <div class="client_rev"></div>
-                          <hr>`;
-    document.querySelector('.rev_item_client').append(clientRev);
+  clientRev.className = "hr";
+  clientRev.innerHTML = `<hr>`;
+    document.querySelector('.container').append(clientRev);
 
     document.querySelector('.client_name').textContent = document.getElementById('rev_name').value;
     // document.querySelector('.client_rev').textContent = document.getElementById('rev').value;
-    document.getElementById('client_img').src = document.getElementById('hrf').value;
-  
+    document.getElementById('client_img').src = document.getElementById('hrf').value; 
 }
 
 
