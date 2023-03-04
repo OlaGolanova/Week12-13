@@ -56,12 +56,9 @@ function showComment() {
                             <div class="client_rev"></div>`;
 
   document.querySelector('.rev_item_client').append(clientRev);
-
-
-  // document.querySelector('.client_rev').textContent = document.getElementById('rev').value;
-  // document.getElementById('client_img').src = document.getElementById('hrf').value;
   document.querySelector('.date').textContent = new Date().toLocaleString("ru", options);
 
+  
   if (checkNo.checked || document.getElementById('rev_name').value === '') {
     document.querySelector('.client_name').textContent = 'username';
   }
@@ -69,8 +66,9 @@ function showComment() {
     document.querySelector('.client_name').textContent = document.getElementById('rev_name').value;
   }
 
+
   if ( document.getElementById('hrf').value !== "" ) {
-    document.getElementById('client_img').src = document.getElementById('hrf').value
+    document.getElementById('client_img').src = document.getElementById('hrf').value;
    }
   else {
     switch (avatarNew) {
@@ -94,10 +92,12 @@ function showComment() {
         break;
       default:
         document.getElementById('client_img').src = './img/user1.png';
-    }}}
-
-
-
+    }}
+  
+    document.getElementById('rev_name').value = '';
+    document.getElementById('hrf').value = '';
+  
+  }
 
 button.addEventListener('click', checkSpam);
 
@@ -109,6 +109,7 @@ let text = document.getElementById('rev').value;
 // newtext2 = newtext.replace (/[\xxx]/gi, "*");
 let newText = text.replace(/viagra|XXX/ig, "***");
 document.querySelector('.client_rev').textContent = newText;
+document.getElementById('rev').value = '';
 }
 
 
