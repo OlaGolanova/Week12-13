@@ -37,10 +37,27 @@ input {
 
 .client_container {
    display: flex;
+   justify-content: space-between;
 }
-/* .client_rev {
+.client_rev {
+    padding: 20px;
     border-bottom: 1px solid #000;
-} */
-.client_foto {
+}
+.client_img {
     margin-right: 50px;
+}
+.client_name {
+    margin-right: 350px;
+}
+.date {
+    width: 50px;
+    margin-right: 50px;
+}
+.check {
+    display: flex;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.check_subtitle {
+margin-right: 300px;
 }
