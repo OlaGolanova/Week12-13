@@ -75,25 +75,25 @@ function showComment() {
   else {
     switch (avatarNew) {
       case 1:
-        document.getElementById('client_img').src = 'img/user1.png';
+        document.getElementById('client_img').src = './img/user1.png';
         break;
       case 2:
-        document.getElementById('client_img').src ='img/user2.png';
+        document.getElementById('client_img').src ='./img/user2.png';
         break;
       case 3:
-        document.getElementById('client_img').src = 'img/user3.jpg';
+        document.getElementById('client_img').src = './img/user3.jpg';
         break;
       case 4:
-        document.getElementById('client_img').src = 'img/user4.jpg';
+        document.getElementById('client_img').src = './img/user4.jpg';
         break;
       case 5:
-        document.getElementById('client_img').src = 'img/user5.png';
+        document.getElementById('client_img').src = './img/user5.png';
         break;
       case 6:
-        document.getElementById('client_img').src = 'img/user6.png';
+        document.getElementById('client_img').src = './img/user6.png';
         break;
       default:
-        document.getElementById('client_img').src = 'img/user1.png';
+        document.getElementById('client_img').src = './img/user1.png';
     }}}
 
 
