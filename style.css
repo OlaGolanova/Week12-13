@@ -38,6 +38,7 @@ input {
 .client_container {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .client_rev {
     padding: 20px;

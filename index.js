@@ -56,9 +56,9 @@ function showComment() {
                             <div class="client_rev"></div>`;
 
   document.querySelector('.rev_item_client').append(clientRev);
-  document.querySelector('.date').textContent = new Date().toLocaleString("ru", options);
+  document.querySelector('.date').textContent = new Date().toLocaleString("ru", options).replace(',', '');
 
-  
+
   if (checkNo.checked || document.getElementById('rev_name').value === '') {
     document.querySelector('.client_name').textContent = 'username';
   }
@@ -141,6 +141,15 @@ let date = new Date("2023-03-04 14:20");
 
 function formatDate(date) {
 
+  let options = {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    timezone: 'UTC',
+    hour: 'numeric',
+    minute: 'numeric',
+  };
+
   let now = new Date();
   // console.log(now);
   
@@ -161,7 +170,9 @@ function formatDate(date) {
   }
   else {
     // console.log(date.toLocaleString("ru", options));
-    return date.toLocaleString("ru", options);
+    let a = String(date.toLocaleString("ru", options)).replace(',', '');
+    let b = a.slice(0,6)+a.slice(8);
+    return b;
   }
 }
 
